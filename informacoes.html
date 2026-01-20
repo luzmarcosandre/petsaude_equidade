@@ -1,65 +1,81 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Informações Institucionais · Equidade & Diversidade no SUS</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin:0; background:#f5f5f5; color:#333; }
-    header { background:#2c7be5; color:#fff; padding:16px; text-align:center; }
-    nav { background:#fff; padding:10px; text-align:center; border-bottom:1px solid #ddd; }
-    nav a { margin:0 10px; text-decoration:none; color:#2c7be5; font-weight:bold; }
-    section { padding:20px; }
-    .card { background:#fff; padding:15px; margin-bottom:15px; border-radius:8px; border:1px solid #e5e5e5; }
-    .hint { color:#666; font-size:14px; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <h1>Informações Institucionais e Canais de Apoio</h1>
-  <p class="hint">Orientações, normativas, canais oficiais e formulários de encaminhamento</p>
+
+<header class="header">
+  <div class="wrap">
+    <h1>Informações Institucionais e Canais de Apoio</h1>
+    <div class="sub">Orientações, normativas, canais oficiais e formulários de encaminhamento</div>
+  </div>
 </header>
 
-<nav>
-  <a href="index.html">Aba Geral</a>
-  <a href="educacao.html">Educação e Atualização</a>
-  <a href="ferramentas.html">Ferramentas Inclusivas</a>
-  <a href="servicos.html">Serviços e Rede</a>
-  <a href="informacoes.html">Informações Institucionais</a>
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html">Aba Geral</a>
+    <a href="educacao.html">Educação e Atualização</a>
+    <a href="ferramentas.html">Ferramentas Inclusivas</a>
+    <a href="servicos.html">Serviços e Rede</a>
+    <a class="ativo" href="informacoes.html">Informações Institucionais</a>
+  </div>
 </nav>
 
-<section>
-  <div class="card">
+<main class="container">
+
+  <section class="card">
+    <span class="badge">Trabalho e vida</span>
     <h2>Licenças, gestação e afastamentos</h2>
     <ul>
       <li>Gestação e lactação: orientações e fluxos (link a definir)</li>
       <li>Licenças e afastamentos: onde consultar e como solicitar (link a definir)</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="card">
+  <section class="card">
+    <span class="badge">Previdência</span>
     <h2>Aposentadoria e temas previdenciários</h2>
-    <p class="hint">Inserir links oficiais e/ou orientações institucionais da gestão pública.</p>
-  </div>
+    <p>
+      Inserir links oficiais e orientações institucionais aplicáveis à gestão pública e ao trabalhador do SUS.
+    </p>
+  </section>
 
-  <div class="card">
+  <section class="card">
+    <span class="badge">Normativas</span>
     <h2>LGPD, portarias e documentos oficiais</h2>
     <ul>
-      <li>LGPD – materiais oficiais (link a definir)</li>
+      <li>LGPD — materiais oficiais (link a definir)</li>
       <li>Portarias e normativas (link a definir)</li>
       <li>Canais oficiais de informação (link a definir)</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="card">
-    <h2>Formulários e canais de encaminhamento</h2>
+  <section class="card">
+    <span class="badge">Canais</span>
+    <h2>Formulários e encaminhamentos</h2>
     <ul>
       <li>Assédio (formulário/link a definir)</li>
       <li>Preconceito (formulário/link a definir)</li>
       <li>Barreiras de acessibilidade (formulário/link a definir)</li>
     </ul>
-    <p class="hint">Aqui é ideal usar formulários online (Google Forms, Microsoft Forms ou canal institucional).</p>
+    <p>
+      Preferir formulários institucionais. Se não houver, utilizar formulário online com linguagem objetiva e orientação de encaminhamento.
+    </p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <strong>Produto do PET-Saúde Equidade</strong> — Ministério da Saúde (SGTES)
+    <br>
+    Parcerias institucionais: Prefeitura de Curitiba · Saúde Já Curitiba · PUCPR
   </div>
-</section>
+</footer>
+
 </body>
 </html>
