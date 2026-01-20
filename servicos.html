@@ -1,64 +1,81 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Serviços e Rede · Equidade & Diversidade no SUS</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin:0; background:#f5f5f5; color:#333; }
-    header { background:#2c7be5; color:#fff; padding:16px; text-align:center; }
-    nav { background:#fff; padding:10px; text-align:center; border-bottom:1px solid #ddd; }
-    nav a { margin:0 10px; text-decoration:none; color:#2c7be5; font-weight:bold; }
-    section { padding:20px; }
-    .card { background:#fff; padding:15px; margin-bottom:15px; border-radius:8px; border:1px solid #e5e5e5; }
-    .hint { color:#666; font-size:14px; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <h1>Serviços e Rede</h1>
-  <p class="hint">Orientações de acesso e referências de rede (quando, onde e como acessar)</p>
+
+<header class="header">
+  <div class="wrap">
+    <h1>Serviços e Rede</h1>
+    <div class="sub">Referências e orientações de acesso: onde, quando e como acessar</div>
+  </div>
 </header>
 
-<nav>
-  <a href="index.html">Aba Geral</a>
-  <a href="educacao.html">Educação e Atualização</a>
-  <a href="ferramentas.html">Ferramentas Inclusivas</a>
-  <a href="servicos.html">Serviços e Rede</a>
-  <a href="informacoes.html">Informações Institucionais</a>
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html">Aba Geral</a>
+    <a href="educacao.html">Educação e Atualização</a>
+    <a href="ferramentas.html">Ferramentas Inclusivas</a>
+    <a class="ativo" href="servicos.html">Serviços e Rede</a>
+    <a href="informacoes.html">Informações Institucionais</a>
+  </div>
 </nav>
 
-<section>
-  <div class="card">
-    <h2>Rede materno-infantil</h2>
-    <p class="hint">Inserir link para mapa interativo/localização de unidade e orientações de acesso.</p>
+<main class="container">
+
+  <section class="card">
+    <span class="badge">Rede materno-infantil</span>
+    <h2>Mapeamento e acesso</h2>
+    <p>
+      Inserir link para mapa interativo/localização de unidades e orientações de acesso (serviço municipal/estadual, quando aplicável).
+    </p>
     <ul>
       <li>Mapa/Localização (link a definir)</li>
       <li>Como acessar (texto curto)</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="card">
-    <h2>Serviços de saúde mental</h2>
+  <section class="card">
+    <span class="badge">Saúde mental</span>
+    <h2>CAPS e redes de apoio</h2>
     <ul>
-      <li>CAPS (endereços e horários – link a definir)</li>
-      <li>Grupos de apoio (AA, NA etc. – link a definir)</li>
-      <li>Como buscar acolhimento e cuidado (texto curto)</li>
+      <li>CAPS (endereços/horários — link a definir)</li>
+      <li>Grupos de apoio (AA, NA e outros — link a definir)</li>
+      <li>Orientações de acolhimento e acesso (texto curto)</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="card">
-    <h2>Serviços do COA e atendimentos especializados</h2>
+  <section class="card">
+    <span class="badge">Atenção especializada</span>
+    <h2>COA e atendimentos</h2>
     <ul>
-      <li>Hormonioterapia (informações de acesso – link a definir)</li>
+      <li>Hormonioterapia (informações de acesso — link a definir)</li>
       <li>Atendimentos especializados (link a definir)</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="card">
+  <section class="card">
+    <span class="badge">Indicadores</span>
     <h2>Dados e indicadores de equidade</h2>
-    <p class="hint">Percentuais por gênero, raça, deficiência (inserir fontes oficiais/links).</p>
+    <p>
+      Inserir fontes oficiais e percentuais/indicadores por gênero, raça/cor e deficiência quando disponíveis
+      (sempre com referência e data).
+    </p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <strong>Produto do PET-Saúde Equidade</strong> — Ministério da Saúde (SGTES)
+    <br>
+    Parcerias institucionais: Prefeitura de Curitiba · Saúde Já Curitiba · PUCPR
   </div>
-</section>
+</footer>
+
 </body>
 </html>
