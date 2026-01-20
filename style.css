@@ -1,149 +1,165 @@
-/* PET-Saúde (SGTES/MS) — Padrão visual básico para web/app */
-/* Base: Manual da Marca PET-Saúde — cores e tipografia (Alte Haas Grotesk, com fallback web) */
+/* =========================================================
+   PET-Saúde (SGTES/MS)
+   Padrão visual institucional — Web/App
+   Baseado no Manual de Identidade Visual PET-Saúde
+   ========================================================= */
 
+/* Paleta institucional */
 :root{
-  /* Paleta institucional (web) */
-  --pet-azul: #0B5FA5;      /* primária */
-  --pet-verde:#2FA84F;      /* secundária */
-  --pet-amarelo:#F2C300;    /* acento */
-  --pet-azul-escuro:#083B66;/* institucional escura */
+  --pet-azul: #0B5FA5;        /* primária */
+  --pet-verde: #2FA84F;      /* secundária */
+  --pet-amarelo: #F2C300;    /* acento */
+  --pet-azul-escuro: #083B66;
 
-  /* Neutros */
-  --bg:#F2F4F7;
-  --card:#FFFFFF;
-  --texto:#1F2937;
-  --muted:#5B6776;
-  --borda:#E6EAF0;
+  --bg: #F2F4F7;
+  --card: #FFFFFF;
+  --texto: #1F2937;
+  --muted: #5B6776;
+  --borda: #E6EAF0;
 
-  /* Tipografia */
-  --font: Arial, Helvetica, system-ui, sans-serif;
-
-  /* Layout */
-  --raio: 14px;
-  --sombra: 0 2px 10px rgba(0,0,0,.05);
+  --fonte: Arial, Helvetica, system-ui, sans-serif;
 }
 
-*{ box-sizing:border-box; }
+/* Reset básico */
+*{
+  box-sizing: border-box;
+}
 
 body{
-  margin:0;
-  font-family: var(--font);
+  margin: 0;
+  font-family: var(--fonte);
   color: var(--texto);
   background: var(--bg);
-  line-height: 1.45;
+  line-height: 1.5;
 }
 
-/* Header institucional */
+/* ================= HEADER ================= */
+
 .header{
   background: var(--pet-azul);
-  color:#fff;
-  padding: 16px 14px;
+  color: #ffffff;
+  padding: 12px 14px;
 }
 
 .header .wrap{
   max-width: 980px;
   margin: 0 auto;
-  display:flex;
-  gap:12px;
-  align-items:center;
-}
-
-.header .logo{
-  width: 52px;
-  height: 52px;
-  object-fit: contain;
-  background: rgba(255,255,255,.12);
-  border-radius: 12px;
-  padding: 6px;
 }
 
 .header h1{
-  margin:0;
+  margin: 0;
   font-size: 20px;
   font-weight: 800;
-  letter-spacing: .2px;
 }
 
 .header .sub{
   margin-top: 4px;
-  font-size: 13px;
-  opacity: .95;
+  font-size: 12px;
+  opacity: 0.9;
 }
 
-/* Navegação (abas) */
+/* ================= MENU ================= */
+
 .nav{
-  background:#fff;
+  background: #ffffff;
   border-bottom: 1px solid var(--borda);
 }
 
 .nav .wrap{
   max-width: 980px;
-  margin:0 auto;
-  padding: 10px 10px;
-  display:flex;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
   gap: 8px;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .nav a{
-  text-decoration:none;
+  text-decoration: none;
+  font-weight: 700;
   color: var(--pet-azul);
-  font-weight: 800;
-  padding: 8px 10px;
+  padding: 8px 14px;
   border-radius: 999px;
-  border: 1px solid transparent;
 }
 
 .nav a:hover{
-  border-color: rgba(11,95,165,.25);
-  background: rgba(11,95,165,.06);
+  background: rgba(11,95,165,0.08);
 }
 
 .nav a.ativo{
-  color: #fff;
   background: var(--pet-verde);
-  border-color: rgba(0,0,0,.05);
+  color: #ffffff;
 }
 
-/* Área de conteúdo */
+/* ================= CONTEÚDO ================= */
+
 .container{
   max-width: 980px;
   margin: 0 auto;
-  padding: 16px 14px 26px;
+  padding: 20px 14px 30px;
 }
 
 .card{
   background: var(--card);
   border: 1px solid var(--borda);
-  border-radius: var(--raio);
-  padding: 14px;
-  box-shadow: var(--sombra);
-  margin: 0 0 14px;
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 .card h2{
-  margin: 0 0 8px;
+  margin-top: 0;
   color: var(--pet-azul);
-  font-size: 16px;
+  font-size: 18px;
 }
-
-.card p{ margin: 8px 0; }
-.card ul{ margin: 8px 0 0 18px; }
 
 .badge{
-  display:inline-block;
-  font-size: 12px;
-  font-weight: 900;
-  padding: 6px 10px;
-  border-radius: 999px;
+  display: inline-block;
   background: var(--pet-amarelo);
   color: #2a2400;
+  font-weight: 800;
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  margin-bottom: 8px;
 }
 
+/* ================= BOTÕES ================= */
+
 .btn{
-  display:inline-block;
-  margin-top: 10px;
-  padding: 10px 12px;
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 16px;
   border-radius: 12px;
-  font-weight:
+  font-weight: 800;
+  text-decoration: none;
+  background: var(--pet-azul);
+  color: #ffffff;
+}
+
+.btn.sec{
+  background: var(--pet-verde);
+  color: #ffffff;
+  margin-left: 8px;
+}
+
+/* ================= RODAPÉ ================= */
+
+.footer{
+  background: #ffffff;
+  border-top: 1px solid var(--borda);
+  padding: 16px 14px;
+}
+
+.footer .wrap{
+  max-width: 980px;
+  margin: 0 auto;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.footer strong{
+  color: var(--pet-azul-escuro);
+}
