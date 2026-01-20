@@ -1,100 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Equidade & Diversidade no SUS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        header {
-            background-color: #2c7be5;
-            color: white;
-            padding: 16px;
-            text-align: center;
-        }
-        nav {
-            background-color: #ffffff;
-            padding: 10px;
-            text-align: center;
-            border-bottom: 1px solid #ddd;
-        }
-        nav a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #2c7be5;
-            font-weight: bold;
-        }
-        section {
-            padding: 20px;
-        }
-        footer {
-            background-color: #eeeeee;
-            text-align: center;
-            padding: 12px;
-            font-size: 14px;
-        }
-        .card {
-            background: white;
-            padding: 15px;
-            margin-bottom: 15px;
-            border-radius: 6px;
-            box-shadow: 0 0 5px rgba(0,0,0,0.1);
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Equidade & Diversidade no SUS · Aba Geral</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>Equidade & Diversidade no SUS</h1>
-    <p>Ferramenta educacional para trabalhadoras e trabalhadores do SUS</p>
+<header class="header">
+  <div class="wrap">
+    <!-- Quando tiver o arquivo, descomente e mantenha este nome -->
+    <!-- <img class="logo" src="assets/logo-pet.png" alt="PET-Saúde"> -->
+    <div>
+      <h1>Equidade & Diversidade no SUS</h1>
+      <div class="sub">Ferramenta educacional do PET-Saúde Equidade — Ministério da Saúde</div>
+    </div>
+  </div>
 </header>
 
-<nav>
-    <a href="index.html">Aba Geral</a>
+<nav class="nav">
+  <div class="wrap">
+    <a class="ativo" href="index.html">Aba Geral</a>
     <a href="educacao.html">Educação e Atualização</a>
     <a href="ferramentas.html">Ferramentas Inclusivas</a>
     <a href="servicos.html">Serviços e Rede</a>
     <a href="informacoes.html">Informações Institucionais</a>
+  </div>
 </nav>
 
-<section>
-    <div class="card">
-        <h2>Sobre o Aplicativo</h2>
-        <p>
-            O aplicativo <strong>Equidade & Diversidade no SUS</strong> foi desenvolvido como
-            uma ferramenta educacional voltada às trabalhadoras e trabalhadores do Sistema Único de Saúde,
-            com o objetivo de promover a equidade, a diversidade e a inclusão no ambiente de trabalho
-            e na prática profissional em saúde.
-        </p>
-    </div>
+<main class="container">
 
-    <div class="card">
-        <h2>Objetivos</h2>
-        <ul>
-            <li>Dar visibilidade às temáticas de equidade e diversidade no SUS;</li>
-            <li>Apoiar práticas de cuidado inclusivas;</li>
-            <li>Disponibilizar conteúdos educativos e ferramentas de apoio;</li>
-            <li>Fortalecer a valorização das trabalhadoras e trabalhadores da saúde.</li>
-        </ul>
-    </div>
+  <section class="card">
+    <span class="badge">PET-Saúde Equidade</span>
+    <h2>Sobre o aplicativo</h2>
+    <p>
+      Este aplicativo é um produto educacional do PET-Saúde Equidade, voltado às trabalhadoras e
+      trabalhadores do SUS, com foco em equidade, diversidade e inclusão no ambiente de trabalho
+      e na prática profissional em saúde.
+    </p>
+  </section>
 
-    <div class="card">
-        <h2>Vinculação Institucional</h2>
-        <p>
-            Este aplicativo é um produto desenvolvido no âmbito do
-            <strong>PET-Saúde Equidade</strong>, iniciativa do Ministério da Saúde,
-            com participação de estudantes, tutoras e preceptores do Sistema Único de Saúde.
-        </p>
-    </div>
-</section>
+  <section class="card">
+    <h2>Objetivos</h2>
+    <ul>
+      <li>Dar visibilidade às temáticas de equidade e diversidade no SUS;</li>
+      <li>Apoiar práticas de cuidado inclusivas;</li>
+      <li>Disponibilizar conteúdos educativos e ferramentas de apoio;</li>
+      <li>Fortalecer a valorização das trabalhadoras e trabalhadores da saúde.</li>
+    </ul>
 
-<footer>
-    PET-Saúde Equidade · Ministério da Saúde · 2026
+    <a class="btn" href="educacao.html">Acessar Educação e Atualização</a>
+    <a class="btn sec" href="ferramentas.html">Ver Ferramentas Inclusivas</a>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div><strong>Produto do PET-Saúde Equidade</strong> — Ministério da Saúde (SGTES).</div>
+    <div class="small-note">Parcerias institucionais: Prefeitura de Curitiba · Saúde Já Curitiba · PUCPR</div>
+
+    <div class="logos">
+      <!-- Suba os PNGs em /assets e descomente as linhas abaixo -->
+      <!-- <img src="assets/logo-pet.png" alt="PET-Saúde"> -->
+      <!-- <img src="assets/logo-curitiba.png" alt="Prefeitura de Curitiba"> -->
+      <!-- <img src="assets/logo-saudeja.png" alt="Saúde Já Curitiba"> -->
+      <!-- <img src="assets/logo-pucpr.png" alt="PUCPR"> -->
+    </div>
+  </div>
 </footer>
 
 </body>
